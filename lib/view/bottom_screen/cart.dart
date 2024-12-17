@@ -11,7 +11,7 @@ class _CartState extends State<Cart> {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text('About us'),
+      child: Text('Cart'),
     );
   }
 }

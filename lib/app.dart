@@ -1,4 +1,4 @@
-import 'package:bottom_nav/view/bottom_navigation_view.dart';
+import 'package:bottom_nav/view/bottom_screen/dashboard.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       debugShowCheckedModeBanner: false,
       routes: {
-        '/': (context) => const BottomNavigationView(),
+        '/': (context) =>  DashboardScreen(),
       },
     );
   }

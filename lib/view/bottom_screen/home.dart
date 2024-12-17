@@ -10,8 +10,14 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text('About us'),
+    return Scaffold(
+      body: Column(
+        children: [
+          TextFormField(),
+          TextFormField(),
+          ElevatedButton(onPressed: (){}, child: Text("Press Me"))
+        ],
+      ),
     );
   }
 }

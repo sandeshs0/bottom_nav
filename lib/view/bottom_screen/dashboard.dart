@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'home.dart';
-import 'cart.dart';
-import 'profile.dart';
+
 import 'about.dart';
+import 'cart.dart';
+import 'home.dart';
+import 'profile.dart';
 
 class DashboardScreen extends StatefulWidget {
   @override
@@ -24,17 +25,21 @@ class _DashboardScreenState extends State<DashboardScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Dashboard'),
+        title: const Text('Navigation Flow'),
         centerTitle: true,
       ),
       body: _screens[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
+        backgroundColor: Colors.black,
+         selectedItemColor: Colors.red,
+        unselectedItemColor: const Color.fromARGB(255, 3, 6, 3),
         onTap: (index) {
           setState(() {
             _currentIndex = index;
           });
         },
+        // backgroundColor: Colors.black,
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
